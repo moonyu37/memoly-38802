@@ -1,0 +1,11 @@
+.item-contents {
+  width: 1024px;
+  margin: 0 auto;
+}
+.logo {
+  width: 100px;
+}
+.title {
+  font-size: 30px;
+  margin-bottom: 28px;
+}

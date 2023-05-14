@@ -1,0 +1,20 @@
+.recommend-btn {
+  text-align: center;
+  border-radius: 20%;
+  background-color: rgb(204, 235, 247);
+  bottom: 32px;
+  right: 32px;
+  position: fixed;
+  padding: 6px;
+}
+
+.recommended-btn {
+  text-align: center;
+  border-radius: 20%;
+  background-color: rgb(246, 214, 210);
+  bottom: 32px;
+  right: 220px;
+  position: fixed;
+  padding: 6px;
+}
+
