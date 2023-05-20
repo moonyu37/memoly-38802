@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+
 .top-page-header {
   width: 100vw;
   padding: 0.5vh 10vw;
@@ -9,14 +10,23 @@
   flex-direction: column;
 }
 
+.lists-right {
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
+}
+
 .search-bar-contents {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 23vh;
+  margin: auto;
 }
 
 .memoly-icon {
-  width: 18vw;
+  width: 17vw;
+  height: 23vh;
   margin-right: 10vw;
 }
 
@@ -24,7 +34,7 @@
   width: 50vw;
   height: 5vh;
   display: flex;
-  margin-bottom: 5px;
+  padding-bottom: 0px ;
 }
 
 .search-form>.input-box {
@@ -42,4 +52,40 @@
 
 .search-icon {
   width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: right;
+
+  width: 100%;
+}
+
+
+
+.recommend {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 20px;
+  margin-right: 3vw;
+  color: #333333;
+  border-bottom:5px dashed rgb(241, 154, 154);
+}
+
+.recommended {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 20px;
+  text-decoration: none;
+  color: #333333;
+  border-bottom:5px dashed rgb(182, 220, 238);
+}
+
+
+.lists-right {
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
+  padding-top: 0;
 }

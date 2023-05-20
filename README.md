@@ -26,7 +26,10 @@ Things you may want to cover:
 ## itemsテーブル
 | Column             | Type      | Options                       |
 | -------------------| ----------| ------------------------------|
+| status_id          | integer   | null: false                   |
 | item_name          | string    | null: false                   |
-| day                | date      | null: false                   |
+| day                | string     | null: false                   |
 | category_id        | integer   | null: false                   |
 | explanation        | text      | null: false                   |
+
+
