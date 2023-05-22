@@ -1,0 +1,58 @@
+<%= render "shared/header" %>
+
+<%# 商品の概要 %>    
+<main>
+    <div class="left-content">
+      <%= image_tag @item.image.variant(resize: '300x300') ,class:"item-box-img" %>
+      <%# if @item.purchase != nil %>
+      <%# end %>
+
+        <%= link_to "商品の編集", root_path(@item), method: :get, class: "item-edit-btn" %>
+        <%= link_to "削除", root_path(@item), method: :delete, class:"item-destroy-btn" %>
+    </div>
+  
+    <div class="right-content">
+      <div class="item-explain-box">      
+          <%= @item.item_name %>
+      </div>
+
+      <table class="detail-table">
+        <tbody>
+          <tr>
+            <th class="detail-item">アイテム名</th>
+            <td class="detail-value"><%= @item.item_name %></td>
+          </tr>
+          <tr>
+            <th class="detail-item">カテゴリー</th>
+            <td class="detail-value"><%= @item.category.name %></td>
+          </tr>
+          <tr>
+            <th class="detail-item">日付</th>
+            <td class="detail-value"><%= @item.day %></td>
+          </tr>
+        </tbody>
+      </table>
+            <div class="explanation-title">説明</div>
+            <div class="explanation"><%= @item.explanation %></div>
+          <div class="option">
+      <div class="favorite-btn">
+        <%= image_tag "star.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
+        <span>お気に入り 0</span>
+      </div>
+    </div>
+  </div>
+</main>
+  <%# /商品の概要 %>
+
+  <div class="links">
+    <a href="#" class="change-item-btn">
+      ＜ 前の商品
+    </a>
+    <a href="#" class="change-item-btn">
+      後ろの商品 ＞
+    </a>
+  </div>
+  <a href="#" class="another-item"><%= @item.category.name %>をもっと見る</a>
+
+
+<%= render "shared/footer" %>
