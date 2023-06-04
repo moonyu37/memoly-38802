@@ -1,34 +1,68 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリケーション名
+memoly
 
-Things you may want to cover:
 
-* Ruby version
+# アプリケーション概要
+メモ機能と写真を一緒に保存することで思い出したい時にすぐ確認することができる
 
-* System dependencies
 
-* Configuration
+# URL
+https://memoly-38802.onrender.com
 
-* Database creation
 
-* Database initialization
+# 利用方法
+## オススメ登録
+1.トップページ(一覧ページ)の”オススメ登録”をクリックして新規登録を行う
+2.オススメされたものやオススメしたいものの内容を登録する
+  (内容：名前、画像、日付、詳細、カテゴリー、オススメしたいものかされたものか)
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+### オススメを確認
+オススメしたいものやオススメされたものを確認した時に詳細ページでオススメ度を星の数で表せる
 
-* Deployment instructions
+#### コメントを記載
+誰にオススメしたか、オススメされたものの感想などをコメントで表示できる
 
-* ...
+
+# アプリケーションを作成した背景
+友人などからオススメの本を教えてもらったり美味しいお菓子などをもらうことがよくあり、覚えておこうと思い、今まではメモアプリにタイトルを登録したり写真を撮っていました。私自身訪れたごはん屋さんや旅行先など、もう一度訪れたい・オススメしたい場所を写真に撮ることがありましたが、いざ思い出したい時に写真を遡ったり内容を忘れてしまっていることが多々ありました。そこでメモと写真が一緒に保存されているアプリがあれば探す煩わしさも減り、オススメしてもらったものの感想を伝えたり、オススメしたいものをすぐに紹介することができると思い開発しようと考えました。
+
+
+# 洗い出した要件
+https://docs.google.com/spreadsheets/d/11f-D0R3PffSpwOAneNAgFWGfTmGACTvvzjUqr54BNPs/edit#gid=982722306
+
+
+# 実装した機能についての画像やGIFおよびその説明
+
+
+# 実装予定の機能
+* JavaScriptでオススメ度を表示する機能
+* カテゴリー毎にアイテムを分ける機能
+* HTML/CSSの整理
+
+# データベース設計
+!memoly.dio
+
+
+# 画面遷移図
+
+# 開発環境
+
+# ローカルでの動作方法
+
+# 工夫したポイント
+機能をシンプルにし、見やすいよう見た目(HTML/CSS)を整理しました。
+個人で使用するので画面遷移よりもJavaScriptを用いて簡単に使用できるようにました。
+
 
 ## itemsテーブル
 | Column             | Type      | Options                       |
 | -------------------| ----------| ------------------------------|
 | status_id          | integer   | null: false                   |
 | item_name          | string    | null: false                   |
-| day                | string     | null: false                   |
+| date               | string    | null: false                   |
 | category_id        | integer   | null: false                   |
 | explanation        | text      | null: false                   |
 
